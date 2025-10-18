@@ -1,8 +1,10 @@
+/* ====== BASE GENERAL ====== */
 body{
   margin: 0px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, Geneva, Verdana, sans-serif;
 }
 
+/* ====== HEADER ====== */
 .header{
   padding: 2.8em;
   font-size: 2em;
@@ -15,6 +17,7 @@ body{
   height: auto;
   min-height: 6.3em; /* mantiene el alto base */
   padding-right: 30%;
+  box-sizing: border-box;
 }
 
 .header .main-text{
@@ -28,6 +31,7 @@ body{
   margin: 0px;
 }
 
+/* ====== MAIN / PRODUCTS ====== */
 .main {
   width: 80%;
   margin: auto;
@@ -80,4 +84,85 @@ border: solid 1px #ddd;
 background-color: white;
 display: block;
 margin: 0 auto;
+}
+/* =========================================================
+   RESPONSIVE DESIGN - Mobile & Tablet (<= 768px)
+   ========================================================= */
+@media (max-width: 768px) {
+  /* --- HEADER --- */
+  .header {
+    padding: 2em 1em;
+    font-size: 1.4em;
+    background-size: 140%; /* la imagen ocupa más pero sin recorte */
+    background-position: center top;
+    padding-right: 0;
+    text-align: center;
+  }
+   .header .main-text {
+    padding: 1em 0;
+    font-size: 1.3em;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+
+  /* --- PRODUCTS --- */
+  .products {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .products table,
+  .products tr,
+  .products td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .products td {
+    padding: 1em 0;
+  }
+
+  .products img {
+    width: 50%;
+    max-width: 200px;
+  }
+
+  /* --- MAIN SECTION (si usas .main) --- */
+  .main {
+    width: 90%;
+  }
+
+  .main td {
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  /* --- FOOTER --- */
+  .footer {
+    height: auto;
+    line-height: 1.5;
+    padding: 1em;
+    font-size: 0.85rem;
+  }
+}
+
+/* =========================================================
+   ✅ EXTRA SMALL (<= 480px)
+   ========================================================= */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.8em;
+  }
+
+  .header .main-text {
+    font-size: 1.1em;
+  }
+
+  .products img {
+    width: 70%;
+  }
 }
