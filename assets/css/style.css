@@ -1,0 +1,83 @@
+body{
+  margin: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, Geneva, Verdana, sans-serif;
+}
+
+.header{
+  padding: 2.8em;
+  font-size: 2em;
+  background-image: url("../imgs/fondo2.png");
+  background-color: rgb(242, 242, 242);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-bottom: 2em;
+  height: auto;
+  min-height: 6.3em; /* mantiene el alto base */
+  padding-right: 30%;
+}
+
+.header .main-text{
+  padding: 3em;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.header h1{
+  font-weight: 400;
+  margin: 0px;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+}
+
+.main td{
+  width: 50%;
+  padding: 2em;
+}
+
+.main img{
+  max-width: 100%;
+  border: solid 1px #ddd;
+}
+
+.footer {
+  height: 3em;
+  line-height: 3em;
+  background-color: rgb(242, 242, 242);
+  color: #222; /* más suave que el negro puro */
+  text-align: center;
+  font-weight: 500; /* menos pesado, más Apple */
+  font-family: "Avenir Next", "Helvetica Neue", "SF Pro Display", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.products {
+width: 80%;
+margin: auto;
+}
+.products table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.products td {
+width: 50%;
+padding: 0.5em 1em;
+background-color: white;
+vertical-align: middle;
+}
+.products td:first-child {
+  width: 30%;             /* ocupa menos ancho que el texto para acercar ambos elementos */
+}
+.products img {
+width: 60%;
+height: auto;
+border-radius: 50%;
+border: solid 1px #ddd;
+background-color: white;
+display: block;
+margin: 0 auto;
+}
