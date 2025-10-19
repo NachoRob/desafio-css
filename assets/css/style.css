@@ -143,12 +143,16 @@ margin: 0 auto;
   }
 
   .products td {
-    padding: 1em 0;
+    padding: 1.2em 0;
   }
 
   .products img {
     width: 50%;
     max-width: 200px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
   }
 
   /* --- MAIN SECTION (si usas .main) --- */
@@ -172,7 +176,7 @@ margin: 0 auto;
 }
 
 /* =========================================================
-   ✅ EXTRA SMALL (<= 480px)
+   EXTRA SMALL (<= 480px)
    ========================================================= */
 @media (max-width: 480px) {
   .header h1 {
