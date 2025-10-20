@@ -31,21 +31,46 @@ body{
   margin: 0px;
 }
 
-/* ====== MAIN / PRODUCTS ====== */
-.main {
+/* ====== PRODUCTS ====== */
+
+.boxes {
   width: 80%;
   margin: auto;
 }
 
-.main td{
-  width: 50%;
-  padding: 2em;
+.products {
+width:80%;
+padding: 20px;
+display: flex;
+flex-direction: column;
+margin-left: 0;
 }
 
-.main img{
-  max-width: 100%;
-  border: solid 1px #ddd;
+.products-box {
+width: 100%;
+padding-top: 20px;
+padding-left: 100px;
+display: flex;
+align-items: center;
 }
+
+.products img {
+width:250px;
+height: auto;
+border-radius: 50%;
+border: solid 1px #ddd;
+background-color: white;
+display: block;
+flex-shrink: 0;
+margin: 0 auto;
+}
+
+.text-content {
+  text-align: left;
+  padding-left: 40px;
+  flex: 1;
+}
+
 
 .footer {
   height: 3em;
@@ -59,32 +84,6 @@ body{
   letter-spacing: 0.5px;
 }
 
-.products {
-width: 80%;
-margin: auto;
-}
-.products table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.products td {
-width: 50%;
-padding: 0.5em 1em;
-background-color: white;
-vertical-align: middle;
-}
-.products td:first-child {
-  width: 30%;             /* ocupa menos ancho que el texto para acercar ambos elementos */
-}
-.products img {
-width: 60%;
-height: auto;
-border-radius: 50%;
-border: solid 1px #ddd;
-background-color: white;
-display: block;
-margin: 0 auto;
-}
 /* =========================================================
    RESPONSIVE DESIGN - Mobile & Tablet (<= 768px)
    ========================================================= */
@@ -102,21 +101,21 @@ margin: 0 auto;
   }
   
   .header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.45); 
-  z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45); 
+    z-index: 1;
   }
 
   .header h1,
   .header p,
   .header .main-text {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
   }
 
   .header .main-text {
@@ -130,40 +129,26 @@ margin: 0 auto;
 
   /* --- PRODUCTS --- */
   .products {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
+    padding: 10px;
   }
 
-  .products table,
-  .products tr,
-  .products td {
-    display: block;
-    width: 100%;
+  .products-box {
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    padding-left: 0; /* Elimina el padding izquierdo */
     text-align: center;
   }
 
-  .products td {
-    padding: 1.2em 0;
-  }
-
   .products img {
-    width: 50%;
+    width: 60%;
     max-width: 200px;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 1em;
   }
 
-  /* --- MAIN SECTION (si usas .main) --- */
-  .main {
-    width: 90%;
-  }
-
-  .main td {
-    display: block;
-    width: 100%;
-    padding: 1em 0;
+  .text-content {
+    padding-left: 0; /* Elimina el padding en móvil */
+    text-align: center; /* Centra el texto en móvil */
   }
 
   /* --- FOOTER --- */
